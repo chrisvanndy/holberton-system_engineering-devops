@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -la echo pwd/.. /boot/
+ls -la ./ ../ /boot/
