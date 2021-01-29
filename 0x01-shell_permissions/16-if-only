@@ -1,2 +1,2 @@
 #!/bin/bash
-if {chown guillaume hello} then{chown betty hello}
+if [chown guillaume hello] else chown betty hello
