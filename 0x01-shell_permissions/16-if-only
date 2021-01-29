@@ -1,2 +1,2 @@
 #!/bin/bash
-if [chown guillaume hello] else chown betty hello
+chown --from guillaume betty hello
