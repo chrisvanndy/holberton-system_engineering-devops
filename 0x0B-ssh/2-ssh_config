@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# configure local ssh client to connect to server without a password
+Host vanndy
+	HostName 34.228.168.244
+	User vagrant
+	StrictHostKeyChecking no
+	PasswordAuthentication no
+	IdentityFile ~/.ssh/holberton
