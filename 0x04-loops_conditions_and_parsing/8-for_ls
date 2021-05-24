@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # use for loop to list all files in CWD w/o suffix
-for FILE in ./*;
+for FILE in *;
 do
 	ls $FILE 
 done | cut -d"-" -f2 
