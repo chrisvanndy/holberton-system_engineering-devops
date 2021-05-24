@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# print variable with while loop
+word=$"Holberton School"
+number=1
+x=$number
+while [ $x -le 10 ]; 
+do	
+        if [ $x == '4' ]
+        then
+		echo "bad luck"
+	elif [ $x == '8' ]
+	then
+		echo "good luck"
+	else
+		echo $word
+	fi
+        x=$((x+1))
+done
