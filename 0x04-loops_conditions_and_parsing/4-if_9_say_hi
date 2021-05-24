@@ -3,12 +3,12 @@
 word=$"Holberton School"
 number=1
 x=$number
-while [ $x -lt 10 ]; 
-do
+while [ $x -le 10 ]; 
+do	
+	echo $word
         if [ $x == '9' ]
         then
 		echo "Hi"
 	fi
-	echo $word
         x=$((x+1))
 done
