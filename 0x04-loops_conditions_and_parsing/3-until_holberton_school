@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# print using until loop
+counter=0
+word=$"Holberton School"
+until [ $counter -gt 10 ]
+do
+	echo $word
+  	((counter++))
+done
