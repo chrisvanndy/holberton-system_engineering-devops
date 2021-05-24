@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # set variable for readability; echo var in for loop
 word=$"Holberton School"
-for $i in {1..10}; do echo $word; done
+for i in {1..10}; do echo $word; done
