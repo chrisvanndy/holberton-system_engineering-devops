@@ -6,5 +6,5 @@ x=$number
 while [ $x -gt 0 ]; 
 do 
 	echo $word
-        x=$(($x-1))
+        x=$((x-1))
 done
