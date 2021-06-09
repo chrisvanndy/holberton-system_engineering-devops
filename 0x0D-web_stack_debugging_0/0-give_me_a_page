@@ -2,3 +2,4 @@
 # get apache to run on the container and return a page
 # find apache is it running? start it. find file
 sudo service apache2 start
+curl localhost
