@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# looking up info about a website
+
+printInfo() {
+    awkReturn=$(dig www.holberton.online | grep -A1 'ANSWER SECTION:' | awk '{print $4,$5}')
+    recordType=$(echo $awkReturn | awk '{print $1}')
+    ip=$(echo $awkRetrun | awk '{print $2}')
+
+    echo "The Subdomain in $2 is a $record record and points to $ip"
+}
+
+if [ $# -eq 1 ]
+ then
+    # print all subdomainsi
+    printInfo $1 www
+    printInfo $1 lb-01
+    printInfo $1 web-01
+    printInfo $1 web-02
+elif [ $# -eq 2 ]
+then
+    # print just this subdomain
+    printInfo $1 $2
+fi
