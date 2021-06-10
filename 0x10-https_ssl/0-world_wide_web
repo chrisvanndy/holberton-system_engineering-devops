@@ -2,11 +2,11 @@
 # looking up info about a website
 
 printInfo() {
-    awkReturn=$(dig www.holberton.online | grep -A1 'ANSWER SECTION:' | awk '{print $4,$5}')
+    awkReturn=$(dig $2.$1 | grep -A1 'ANSWER SECTION:' | awk '{print $4,$5}')
     recordType=$(echo $awkReturn | awk '{print $1}')
-    ip=$(echo $awkRetrun | awk '{print $2}')
+    ip=$(echo $awkReturn | awk '{print $2}')
 
-    echo "The Subdomain in $2 is a $record record and points to $ip"
+    echo "The subdomain $2 is a $recordType record and points to $ip"
 }
 
 if [ $# -eq 1 ]
