@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# backupfile in tarball format of Mysql database
+
+# dump all MySQL databases
+mysqldump -u root --password=$1 --all-databases > backup.sql
+
+# set variable to current date (D-M-Y)
+currentDate=`date +"%d-%m-%Y"`
+
+# filename set as a string with date variable
+filename=$currentDate.tar.gz
+
+# create tarball named $filename from backup.sql
+tar -czvf $filename backup.sql  
+
+
+
+
