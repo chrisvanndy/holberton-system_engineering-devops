@@ -32,7 +32,7 @@ def get_emp_tasks(empID):
             completed += 1
             task_list.append(task.get('title'))
     # up counter variable if tasks completed
-    print("Employee {} is done with tasks({}/{}:)".format(
+    print("Employee {} is done with tasks({}/{}):".format(
         name, completed, len(todosJson)))
     for task in task_list:
         print("\t {}".format(task))
