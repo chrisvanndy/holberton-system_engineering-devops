@@ -21,7 +21,7 @@ def export_all_to_json():
 
     for task in todosJson:
         if users_and_tasks.get(task['userId'], False) is False:
-            print("user added: {}".format(task['userId']))
+            # print("user added: {}".format(task['userId']))
             users_and_tasks[task['userId']] = []
         task_dict = {}
         task_dict['username'] = user_info[task['userId']]
