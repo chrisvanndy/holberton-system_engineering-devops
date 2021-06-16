@@ -17,11 +17,11 @@ def get_emp_tasks(empID):
     todosRes = requests.get(
         'https://jsonplaceholder.typicode.com/users/{}/todos'.format(empID))
 
-    #print("userRes: {}\n".format(userRes))
-    #print("todosRes: {}\n".format(todosRes))
+    # print("userRes: {}\n".format(userRes))
+    # print("todosRes: {}\n".format(todosRes))
     # get the json from responses
     name = userRes.json().get('name')
-    #print("Name: {}".format(name))
+    # print("Name: {}".format(name))
 
     todosJson = todosRes.json()
     # save the employee name
