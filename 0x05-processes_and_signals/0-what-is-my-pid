@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# displays the process id of this file
+# '$$' is the id of the current process
+echo $$
