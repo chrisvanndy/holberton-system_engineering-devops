@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# write a program that prints with a 2s sleep
+trap "echo I am invincible!!!" SIGTERM
+while true; do
+    echo "To infinity and beyond"
+    sleep 2s
+
+done
+
