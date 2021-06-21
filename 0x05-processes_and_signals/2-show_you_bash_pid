@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# display lines containing "bash" 
+# shellcheck disable=2c2009
+# ps provides snashot of process ids
+# -ef shows all processes using standard sytnax
+# | grep bash will return results contains 'bash' 
+ps -ef | grep bash
