@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 # list pids of current processes
-# ps all process ids
-ps -aux
+# ps report a snapshot of the current processes
+# ps -ef prints all current processes
+# -a select all processes except session leaders
+# -u user list / user oriented format
+# -x list all processes with a terminal (tty) when used with a option
+ps -efaux
