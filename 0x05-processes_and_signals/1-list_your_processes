@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# list pids of current processes
+# ps all process ids
+ps -aux
